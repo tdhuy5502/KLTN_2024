@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/viewBackground"
+    tools:context=".AddScheduleActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4169E1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:padding="8dp"
+        android:text="Bổ sung lịch giảng dạy"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="Tên Lớp học:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/AddSpinnerClass"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:popupBackground="@color/viewBackground"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="Tên Khoá học:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/AddSpinnerCourse"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:popupBackground="@color/viewBackground"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="Ca học:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/AddSpinnerPhase"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:entries="@array/spinner_entries"
+            android:popupBackground="@color/viewBackground"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="Giờ học:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/AddSpinnerTime"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:entries="@array/spinner_entries"
+            android:popupBackground="@color/viewBackground"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="Ngày học:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/AddDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Day"
+            android:inputType="date"
+            android:layout_marginRight="8dp"
+            android:padding="12dp"
+            android:background="@drawable/boder"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="Phòng học:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/AddSpinnerRoom"
+            android:layout_width="280dp"
+            android:layout_marginLeft="9dp"
+            android:layout_height="match_parent"
+            android:entries="@array/spinner_entries"
+            android:popupBackground="@color/viewBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="GV Giảng dạy:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/AddSpinnerTeacher"
+            android:layout_width="280dp"
+            android:layout_marginLeft="9dp"
+            android:layout_height="match_parent"
+            android:entries="@array/spinner_entries"
+            android:popupBackground="@color/viewBackground"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <Button
+
+            android:layout_marginLeft="105dp"
+            android:id="@+id/btnAddSchedule"
+            android:background="#4169E1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận" />
+        <Button
+
+            android:layout_marginLeft="15dp"
+            android:id="@+id/ComeBackButton"
+            android:background="#4169E1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trở về" />
+    </LinearLayout>
+</LinearLayout>

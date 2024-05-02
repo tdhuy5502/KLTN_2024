@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/viewBackground"
+    tools:context=".SearchTeacherAvtivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4169E1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="Tìm kiếm thông tin giảng viên theo tên"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/txtSearchTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="User role"
+            android:inputType="text"
+            android:layout_marginRight="8dp"
+            android:padding="12dp"
+            android:background="@drawable/boder"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btnSearchTeacher"
+            android:background="#4169E1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tìm kiếm" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <ListView
+            android:id="@+id/listSearchTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/viewBackground"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

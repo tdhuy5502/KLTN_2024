@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddClassActivity"
+    android:orientation="vertical"
+    android:background="@color/viewBackground">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4169E1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:padding="8dp"
+        android:text="Thêm thông tin lớp học"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"/>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="Tên Lớp học:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextClassName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="User role"
+            android:inputType="text"
+            android:layout_marginRight="8dp"
+            android:padding="12dp"
+            android:background="@drawable/boder"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="Tên khoá học:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerCourse"
+            android:layout_width="280dp"
+            android:layout_marginLeft="9dp"
+            android:layout_height="match_parent"
+            android:entries="@array/spinner_entries"
+            android:popupBackground="@color/viewBackground"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="Số sinh viên:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextStudentQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginRight="8dp"
+            android:padding="12dp"
+            android:background="@drawable/boder"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="GV Giảng dạy:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerTeacher"
+            android:layout_width="280dp"
+            android:layout_marginLeft="9dp"
+            android:layout_height="match_parent"
+            android:entries="@array/spinner_entries"
+            android:popupBackground="@color/viewBackground"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <Button
+
+            android:layout_marginLeft="105dp"
+            android:id="@+id/btnAddClass"
+            android:background="#4169E1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận" />
+        <Button
+
+            android:layout_marginLeft="15dp"
+            android:id="@+id/ComeBackButton"
+            android:background="#4169E1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trở về" />
+    </LinearLayout>
+
+</LinearLayout>

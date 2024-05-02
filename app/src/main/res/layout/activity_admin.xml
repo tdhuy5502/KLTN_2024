@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayoutAdmin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/viewBackground">
+
+    <!-- Nội dung chính -->
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/viewBackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#4169E1"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Các lối tắt tiện ích của bạn"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="italic|bold"
+            android:padding="16dp">
+        </TextView>
+        <!-- Nội dung chính của ứng dụng -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/viewBackground"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/adminScheduleViewBtn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/schedule" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tìm kiếm và chỉnh sửa lịch dạy"
+                android:textColor="#000000"
+                android:textSize="19dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="italic|bold"
+                android:padding="16dp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/viewBackground"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/adminTeacherViewBtn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/teacher" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quản lý danh sách giảng viên"
+                android:textColor="#000000"
+                android:textSize="19dp"
+                android:layout_marginTop="21dp"
+                android:textStyle="italic|bold"
+                android:padding="16dp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/viewBackground"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/adminCourseViewBtn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/course1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quản lý danh sách khoá học"
+                android:textColor="#000000"
+                android:textSize="19dp"
+                android:layout_marginTop="25dp"
+                android:textStyle="italic|bold"
+                android:padding="16dp">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Slide menu -->
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        >
+
+        <!-- Nội dung của slide menu -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#4169E1" />
+
+        <TextView
+            android:id="@+id/quanly_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý người dùng"
+            android:textColor="#000000"
+            android:textStyle="italic|bold"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/quanly_lich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sắp xếp lịch dạy"
+            android:textColor="#000000"
+            android:textStyle="italic|bold"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/quanly_kh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý khoá học"
+            android:textStyle="italic|bold"
+            android:textColor="#000000"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/quanly_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý thông tin giảng viên"
+            android:textColor="#000000"
+            android:textStyle="italic|bold"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/quanly_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý lớp học"
+            android:textStyle="italic|bold"
+            android:textColor="#000000"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/quanly_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý phòng học"
+            android:textStyle="italic|bold"
+            android:textColor="#000000"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/dangxuat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng xuất"
+            android:textColor="#000000"
+            android:textStyle="italic|bold"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

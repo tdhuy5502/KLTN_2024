@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/viewBackground"
+    tools:context=".AdminScheduleCRUD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <!-- Text view để hiển thị thông tin chi tiết tài khoản -->
+        <TextView
+            android:id="@+id/textViewAccountDetails"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="#4169E1"
+            android:text="Thông tin chi tiết lịch học"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/txtScheduleId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:text="Thông tin chi tiết phòng học"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtScheduleClassName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:text="Thông tin chi tiết phòng học"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/txtSchedulePhase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:text="Thông tin chi tiết phòng học"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/txtScheduleTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:text="Thông tin chi tiết phòng học"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/txtScheduleDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:text="Thông tin chi tiết phòng học"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/txtScheduleRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:text="Thông tin chi tiết phòng học"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/txtScheduleTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:text="Thông tin chi tiết phòng học"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp">
+
+            <Button
+                android:id="@+id/buttonEditSchedule"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Chỉnh sửa"
+                android:background="#4169E1"/>
+
+            <!-- Nút xoá tài khoản -->
+            <Button
+                android:background="#4169E1"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/buttonDeleteSchedule"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Xoá" />
+        </LinearLayout>
+        <!-- Nút sửa tài khoản -->
+
+    </LinearLayout>
+</LinearLayout>

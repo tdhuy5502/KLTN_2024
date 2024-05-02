@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/viewBackground"
+    tools:context=".UserSearchSchedule">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4169E1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="Tìm kiếm thông tin lịch dạy của bạn"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:padding="8dp"
+            android:text="Tên GV: "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/userSearchScheduleByTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="User role"
+            android:inputType="text"
+            android:layout_marginRight="8dp"
+            android:padding="12dp"
+            android:background="@drawable/boder"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:padding="8dp"
+            android:text="Từ:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/userMinDaySchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="User role"
+            android:inputType="text"
+            android:layout_marginRight="8dp"
+            android:padding="12dp"
+            android:background="@drawable/boder"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="Đến:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/userMaxDaySchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/boder"
+            android:ems="10"
+            android:hint="User role"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <Button
+            android:id="@+id/userBtnSearchScheduleByDayRange"
+            android:background="#4169E1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tìm kiếm" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ListView
+            android:id="@+id/listUserSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/viewBackground" />
+    </LinearLayout>
+</LinearLayout>
